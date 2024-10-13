@@ -17,5 +17,12 @@
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false
-  }
+    
+  },
+  // Si no queremos ocupar whatch en docker compose y ocupar volumes
+  // "watchOptions": {
+  //  "watchFile": "dynamicPriorityPolling",
+  //  "watchDirectory": "dynamicPriorityPolling",
+  //  "excludeDirectories": ["**/node_modules", "dist"]
+  // }
 }

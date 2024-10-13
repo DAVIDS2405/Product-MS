@@ -6,6 +6,7 @@ import { MicroserviceOptions, Transport } from '@nestjs/microservices';
 
 async function bootstrap() {
   const logger = new Logger('ProductsMS-Main');
+  
   const app = await NestFactory.createMicroservice<MicroserviceOptions>(
     AppModule,
     {
@@ -22,6 +23,8 @@ async function bootstrap() {
     }),
   );
   app.listen();
-  logger.log('Iniciado el proyecto de microservicios del producto');
+  logger.log('Iniciado el proyecto de microservices del producto');
+
+
 }
 bootstrap();
